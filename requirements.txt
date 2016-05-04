@@ -1,0 +1,4 @@
+asgi-redis==0.10.0
+channels==0.12.0
+daphne==0.11.1
+Django==1.9.5
