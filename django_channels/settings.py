@@ -129,7 +129,10 @@ STATIC_URL = '/static/'
 
 CHANNEL_LAYERS = {
     'default': {
-        'BACKEND': 'asgiref.inmemory.ChannelLayer',
+        'BACKEND': 'asgi_redis.RedisChannelLayer',
         'ROUTING': 'django_channels.routing.channel_routing',
+        'CONFIG': {
+            'hosts': [('redis', 6379), ],
+        },
     },
 }
