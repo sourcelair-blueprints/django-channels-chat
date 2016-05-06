@@ -1,0 +1,152 @@
+.mdl-grid {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	padding: 0;
+}
+
+.chat-box {
+	background : rgb(246, 247, 248);
+	position: relative;
+	overflow: hidden;
+	margin: 0;
+}
+
+.mdl-cell--4-col, .mdl-cell--4-col-phone.mdl-cell--4-col-phone {
+	width: 100%;
+}
+
+.actions-container {
+	position: absolute;
+	bottom: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 1rem;
+	transition: all .15s ease-in;
+	visibility: visible;
+	opacity: 1;
+	background: white;
+}
+
+.button-container {
+	padding: 20px 0;
+	display: none;
+}
+
+.message-list {
+	padding: 1rem;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	overflow: auto;
+}
+
+.message {
+	clear: both;
+	margin: 1rem 0;
+}
+
+.own.message {
+	text-align: right;
+}
+
+.message__author {
+	padding: 0 .5rem;
+}
+
+.message__avatar {
+	background: #F44336;
+	border-radius: 1000px;
+	height: 50px;
+	width: 50px;
+	float: left;
+}
+
+.message__text {
+	overflow: hidden;
+	padding: 0 1rem;
+}
+
+.own.message .message__avatar {
+	float: right;
+	background: #3949AB;
+}
+
+.mdl-progress {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+	height: 2px;
+}
+
+.mdl-progress.mdl-progress--indeterminate>.bar1, .mdl-progress.mdl-progress__indeterminate>.bar1, .mdl-progress.mdl-progress--indeterminate>.bar3, .mdl-progress.mdl-progress__indeterminate>.bar3 {
+	background-color: rgb(68,138,255);
+}
+
+#add-chat-button {
+	position: fixed;
+	bottom: 2rem;
+	right: 2rem;
+	z-index: 100;
+	visibility: hidden;
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+.float-right {
+	float: right;
+}
+
+.float-left {
+	float: left;
+}
+
+.hidden {
+	visibility: hidden;
+	opacity: 0;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	.mdl-grid {
+		position: absolute;
+		height: calc(100% - 16px);
+		width: calc(100% - 16px);
+		padding: 8px;
+	}
+
+	.chat-box {
+		margin: 8px;
+	}
+
+	#add-chat-button {
+		visibility: visible;
+	}
+
+	.mdl-cell--4-col, .mdl-cell--4-col-phone.mdl-cell--4-col-phone {
+		width: calc(33.33333333% - 16px);
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+	.button-container {
+		display: block;
+	}
+}
