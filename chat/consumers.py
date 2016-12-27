@@ -1,5 +1,5 @@
 import json
-from urllib import parse
+from six.moves.urllib.parse import parse_qs
 
 from channels import Group
 from channels.sessions import channel_session
@@ -7,7 +7,7 @@ from channels.sessions import channel_session
 
 @channel_session
 def ws_add(message, room):
-    query = parse.parse_qs(message['query_string'])
+    query = parse_qs(message['query_string'])
     if 'username' not in query:
         return
     Group('chat-%s' % room).add(message.reply_channel)
