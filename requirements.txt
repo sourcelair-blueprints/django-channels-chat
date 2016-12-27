@@ -2,3 +2,4 @@ asgi-redis==1.0.0
 channels==0.17.3
 daphne==0.15.0
 Django==1.10.4
+six==1.10.0
