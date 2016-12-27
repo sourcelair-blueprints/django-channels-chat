@@ -16,7 +16,10 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 
+from chat.views import chat_view
+
+
 urlpatterns = [
-	url(r'^$', 'chat.views.chat_view'),
+	url(r'^$', chat_view),
     url(r'^admin/', admin.site.urls),
 ]
