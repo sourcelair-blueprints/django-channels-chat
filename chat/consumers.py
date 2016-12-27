@@ -1,6 +1,5 @@
 import json
 from six.moves.urllib.parse import parse_qs
-from six.moves.urllib.parse import urlparse
 import logging
 
 from channels import Group
