@@ -26,6 +26,8 @@ SECRET_KEY = '&pd#t)v1x)q6fwpw5kgue)_#ng@3c+o5z+hcyox1(u(wk($1u+'
 DEBUG = True
 
 ALLOWED_HOSTS = []
+if os.getenv('SL_PUBLIC_URL'):
+    ALLOWED_HOSTS.append(os.getenv('SL_PUBLIC_URL'))
 
 
 # Application definition
