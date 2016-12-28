@@ -8,7 +8,7 @@ The easiest way to get started is by visiting https://lair.io/stacks/channels-ch
 
 This will do the following on your behalf:
 
-1. create a new SourceLair Django 1.9 project
+1. create a new SourceLair Python 3.5, Django 1.10 project
 2. clone the code from this Git repository
 3. install all the needed dependencies using `pip install -r requirements.txt`
 
